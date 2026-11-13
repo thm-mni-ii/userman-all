@@ -1,0 +1,51 @@
+### Login
+POST /login HTTP/1.1
+Content-Type: application/json
+Host: localhost:8080
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+### Get login state
+GET /login HTTP/1.1
+Host: localhost:8080
+
+### Create a new user
+POST /users HTTP/1.1
+Content-Type: application/json
+Host: localhost:8080
+
+{
+  "givenName": "Bruce",
+  "familyName": "Wayne",
+  "username": "bat",
+  "password": "1234"
+}
+
+### Get all users
+GET /users HTTP/1.1
+Host: localhost:8080
+
+### Get specific user
+GET /users/1 HTTP/1.1
+Host: localhost:8080
+
+### Update specific user
+PUT /users/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "givenName": "Selina",
+  "familyName": "Kyle"
+}
+
+### Delete specific user
+DELETE  /users/1 HTTP/1.1
+Host: localhost:8080
+
+### Logout
+POST /logout HTTP/1.1
+Host: localhost:8080

@@ -1,0 +1,16 @@
+{
+  "name": "userman-all-server",
+  "dependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.5",
+    "@types/express-session": "^1.18.2",
+    "apidoc": "^1.2.0",
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mysql2": "^3.15.3"
+  },
+  "scripts": {
+    "apidoc": "apidoc -i src -f .ts$ -o apidoc/"
+  }
+}
